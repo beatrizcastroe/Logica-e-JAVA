@@ -23,7 +23,7 @@ public class Exercicio6 {
 		d= (Math.pow(px2-px1, 2.0))+(Math.pow(py2-py1, 2.0));
 		d = Math.sqrt(d);
 		
-		System.out.println("A distância entre eles é de: "+d);
+		System.out.printf("\nA distância entre eles é de: %.2f",d);
 		
 	}
 
