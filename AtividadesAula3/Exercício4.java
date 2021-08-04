@@ -15,7 +15,7 @@ pessoas, calcule e mostre: (WHILE)*/
 		int idade, sexo, carac, hagre=0, mner=0, ocalm=0, mais40nerv=0, menos18calm=0, cont=0;
 		int m=0, h=0, o=0, calmo=0, nerv=0, agre=0;
 		
-		while (cont<2)
+		while (cont<150)
 		{
 			System.out.println("Digite sua idade: ");
 			idade=leia.nextInt();
