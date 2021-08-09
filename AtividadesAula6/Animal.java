@@ -12,8 +12,11 @@ public class Animal {
 	public Animal (String nome, int idade, boolean som, boolean correr)
 	{
 		super ();
-		this.nome = nome;
-		this.idade = idade;
+		Scanner leia = new Scanner(System.in);
+		System.out.println("Insira o nome do animal: ");
+        this.setNome(leia.nextLine());
+        System.out.println("Insira a idade do animal: ");
+        this.setIdade(leia.nextInt());
 		this.som = som;
 		this.correr = correr;
 	}
