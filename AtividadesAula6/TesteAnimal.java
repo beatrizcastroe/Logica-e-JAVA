@@ -14,17 +14,17 @@ public class TesteAnimal {
 		switch (ani) {
 		
 		case 1: 
-			Cachorro cachorro = new Cachorro (null, 0, true, true); 
+			Cachorro cachorro = new Cachorro (null, 0, true); 
 			cachorro.imprimirInfo();
 			break;
 			
 		case 2:
-			Cavalo cavalo = new Cavalo (null, 0, true, true);
+			Cavalo cavalo = new Cavalo (null, 0, true);
 			cavalo.imprimirInfo();
 			break;
 			
 		case 3:
-			Preguica piriguicinha = new Preguica (null, 0, true, true);
+			Preguica piriguicinha = new Preguica (null, 0, true);
 			piriguicinha.imprimirInfo();
 			break;
 		}

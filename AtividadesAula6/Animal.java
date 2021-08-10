@@ -6,10 +6,10 @@ public class Animal {
 	
 	private String nome;
 	private int idade;
-	private boolean som;
 	private boolean correr;
+	private boolean sobe;
 	
-	public Animal (String nome, int idade, boolean som, boolean correr)
+	public Animal (String nome, int idade, boolean correr)
 	{
 		super ();
 		Scanner leia = new Scanner(System.in);
@@ -17,15 +17,14 @@ public class Animal {
         this.setNome(leia.nextLine());
         System.out.println("Insira a idade do animal: ");
         this.setIdade(leia.nextInt());
-		this.som = som;
 		this.correr = correr;
 	}
-	public Animal (String nome, int idade, boolean som)
+	public Animal (String nome, boolean sobe, int idade)
 	{
 		super ();
 		this.nome = nome;
+		this.setSobe(sobe);
 		this.idade = idade;
-		this.som = som;
 	}
 
 	public String getNome() {
@@ -43,15 +42,6 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
-	public boolean isSom() {
-		return som;
-	}
-
-	public void setSom(boolean som) {
-		this.som = som;
-	}
-	
 	
 	public boolean isCorrer() {
 		return correr;
@@ -60,16 +50,10 @@ public class Animal {
 	public void setCorrer(boolean correr) {
 		this.correr = correr;
 	}
-
-	public void soltaSom()
-	{
-		if (isSom())
-		{
-			System.out.println("Sim");
-		}
-		else 
-		{
-			System.out.println("Não");
-		}
+	public boolean isSobe() {
+		return sobe;
+	}
+	public void setSobe(boolean sobe) {
+		this.sobe = sobe;
 	}
 }
